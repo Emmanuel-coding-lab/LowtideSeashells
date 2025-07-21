@@ -77,10 +77,10 @@
 
     .search-box {
       background-color: #a7cef6;
-      padding: 10px; /* half the original */
+      padding: 20px; /* restored from 10px to 20px */
       border-radius: 10px;
       border: 1px solid #000;
-      flex: 2.4; /* slightly wider */
+      flex: 2.4;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -112,21 +112,21 @@
 
     .image-box {
       background-color: #a7cef6;
-      padding: 10px; /* half the original */
+      padding: 20px; /* restored from 10px to 20px */
       border-radius: 10px;
       border: 1px solid #000;
-      flex: 1; /* shorter than search-box */
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
+    
     .image-box img {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;       /* fill full width */
+      height: 100%;      /* fill full height */
       border-radius: 10px;
       border: 1px solid #000;
-      object-fit: contain;
+      object-fit: cover; /* ensures complete fill, may crop */
     }
   </style>
 </head>
