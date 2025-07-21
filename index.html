@@ -29,7 +29,7 @@
       border-radius: 50%;
       border: 1px solid black;
       object-fit: cover;
-      background-color: #94bfe6; /* darker than before, but lighter than original */
+      background-color: #94bfe6;
       padding: 5px;
     }
 
@@ -47,8 +47,8 @@
     }
 
     .social-icons img {
-      height: 60px;
-      width: 60px;
+      height: 70px; /* slightly larger */
+      width: 70px;
     }
 
     nav {
@@ -66,21 +66,21 @@
 
     .container {
       display: flex;
-      gap: 40px; /* same as padding for uniform spacing */
-      padding: 40px; /* doubled original 20px to 40px */
+      gap: 40px;
+      padding: 40px;
       background-color: #cce6ff;
       border-radius: 8px;
       margin: 20px;
       border: 1px solid #000;
-      height: 500px; /* make the container taller */
+      height: 440px; /* reduced height */
     }
 
     .search-box {
       background-color: #a7cef6;
-      padding: 20px; /* doubled from 10px to 20px */
+      padding: 10px; /* half the original */
       border-radius: 10px;
       border: 1px solid #000;
-      flex: 2.2; /* slightly larger than image-box */
+      flex: 2.4; /* slightly wider */
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -88,7 +88,7 @@
 
     .search-input-container {
       display: flex;
-      gap: 20px; /* doubled gap between input and button */
+      gap: 20px;
     }
 
     .search-box input[type="text"] {
@@ -98,7 +98,6 @@
       border: 1px solid #666;
       flex: 1;
       box-sizing: border-box;
-      margin-right: 0;
     }
 
     .search-box button {
@@ -113,10 +112,10 @@
 
     .image-box {
       background-color: #a7cef6;
-      padding: 20px; /* doubled from 10px */
+      padding: 10px; /* half the original */
       border-radius: 10px;
       border: 1px solid #000;
-      flex: 1.2; /* slightly smaller than search box */
+      flex: 1; /* shorter than search-box */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -164,4 +163,3 @@
 
 </body>
 </html>
-
