@@ -2,82 +2,141 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="css/estilos1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Tide Seashells</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #e6f2ff;
+      border-radius: 10px;
+    }
 
-  <title>Inicio</title>
+    header {
+      background-color: #99ccff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 4px;
+      margin: 10px;
+    }
 
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid black;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-right: 10px;
+    }
+
+    .social-icons img {
+      height: 45px;
+    }
+
+    nav {
+      background-color: #ccc;
+      margin: 0 10px 10px 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      background-color: #99ccff;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .search-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .search-box input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #666;
+      margin-bottom: 10px;
+    }
+
+    .search-box button {
+      width: 100px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid #666;
+      background-color: #e0e0e0;
+    }
+
+    .image-box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
 <body>
 
-<header>
-  &nbsp;
-  &nbsp;
-  <div id="concha"></div>
-  <div id="logo"><img src="imagenes/logo.png" width="140" height="140"></A></div>
-  <div id="red1" class="redes"><A TARGET="BLANK" HREF=https://www.instagram.com/lowtide_seashells_/><img src="imagenes/instagram.png" width="70" height="70"></A></div>
-  <div id="red2" class="redes"><A TARGET="BLANK" HREF=https://www.conchology.be/?t=261><img src="imagenes/conchology.png" width="80" height="80"></A></div>
-  <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <div> 
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <h1 style="font-size:55px;">LOW TIDE SEASHELLS<h1>
-     </div>
-    <p>&nbsp;</p>
-     
-</header>
-  
-<nav class="navegacion">
-<ul class="menu">
-<li><a href="index.html"><b>Inicio</b></a></li>
-<li><a href="ubicacion.html"><b>Ubicación</b></a></li>     
-<li><a href="Familias.html"><b>Familias</b></a></li>
-<li><a href="unknown.html"><b>Especímenes Desconocidos</b></a></li>
-<li><a href="creador.html"><b>Creador</b></a></li>
-</nav>
+  <header>
+    <img src="imagenes/logo.png" alt="Logo" class="logo">
+    <div class="title">LOW TIDE SEASHELLS</div>
+    <div class="social-icons">
+      <img src="imagenes/instagram.png" alt="Instagram">
+      <img src="imagenes/shell-icon.png" alt="Shell Icon">
+    </div>
+  </header>
 
-<div id="secimg">
-  <div>
-    <img src="imagenes/baner.jpg" alt= "imagen"></A>
-   </div>
-</div>
+  <nav>
+    <div>Inicio</div>
+    <div>Ubicación</div>
+    <div>Familias</div>
+    <div>Especímenes Desconocidos</div>
+    <div>Creador</div>
+  </nav>
 
-<div class="container">
-  <div class="buscar-wrapper">
-    <input type="text" id="buscar" placeholder="Buscar" class="buscar-input">
-    <button onclick="buscar()" class="buscar-button">Buscar</button>
+  <div class="container">
+    <div class="search-box">
+      <input type="text" placeholder="Buscar">
+      <button>Buscar</button>
+    </div>
+    <div class="image-box">
+      <img src="imagenes/shells.jpg" alt="Shells Image">
+    </div>
   </div>
-  <ul id="results" class="results"></ul>
-</div>
-
-
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p>
-
-
-<div id="marco"></div>
-<section id="noticias">
-  <p>&nbsp;</p>
- 	<center><h1>INTRODUCCIÓN</h1><br></center>
- 	<p style="text-align: justify;">The purpose of this website focuses on the collection and identification of sea shells in Colombia and the United States. This project began in May 2024, based on an initial collection of approximately two years. All Colombian specimens in the database were collected by Emmanuel Henao Estrada from various locations, including Barú Island in Cartagena, San Andrés Islas, Isla Palma, and the Camino Verde Hotel in Tolú. On the other hand, the specimens from Florida, in the United States, were purchased from a thrift store in Michigan. All collected specimens were found empty, and no animals were harmed in the process.</p>
-
-</section>
-
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-
-<footer>
-<section id="noticias3">
-  <p>&nbsp;</p>
-	&nbsp;&nbsp;<CENTER>&copy; EMMANUEL HENAO ESTRADA </CENTER><div id="truco"><img src="imagenes/logo.png" width="50" height="50"></div> 
-  
-</section>
-</footer>
-
-  <script src="busqueda.js" type="text/javascript"></script>
 
 </body>
 </html>
