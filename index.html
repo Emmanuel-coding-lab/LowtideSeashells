@@ -9,19 +9,18 @@
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: #e6f2ff;
-      border-radius: 10px;
+      background-color: #f0f8ff;
     }
 
     header {
-      background-color: #99ccff;
-      padding: 20px;
+      background-color: #cce6ff;
+      padding: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border: 1px solid #000;
-      border-radius: 4px;
-      margin: 10px;
+      border-radius: 8px;
+      margin: 20px;
     }
 
     .logo {
@@ -30,6 +29,8 @@
       border-radius: 50%;
       border: 2px solid black;
       object-fit: cover;
+      background-color: #336699; /* dark blue fill inside circle */
+      padding: 5px;
     }
 
     .title {
@@ -51,10 +52,10 @@
 
     nav {
       background-color: #ccc;
-      margin: 0 10px 10px 10px;
-      padding: 10px;
+      margin: 0 20px 20px 20px;
+      padding: 10px 40px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* align to left */
       gap: 40px;
       border: 1px solid #000;
       border-radius: 4px;
@@ -63,16 +64,22 @@
 
     .container {
       display: flex;
-      justify-content: space-between;
-      gap: 20px;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px;
+      background-color: #cce6ff;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    .search-box, .image-box {
+      background-color: #ffffff;
       padding: 20px;
-      background-color: #99ccff;
-      border-radius: 5px;
-      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid #666;
     }
 
     .search-box {
-      flex: 1;
       display: flex;
       flex-direction: column;
     }
@@ -96,7 +103,6 @@
     }
 
     .image-box {
-      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -121,17 +127,17 @@
   </header>
 
   <nav>
-    <div>Inicio</div>
-    <div>Ubicación</div>
-    <div>Familias</div>
-    <div>Especímenes Desconocidos</div>
-    <div>Creador</div>
+    <div>Home</div>
+    <div>Location</div>
+    <div>Families</div>
+    <div>Unknown Specimens</div>
+    <div>Creator</div>
   </nav>
 
   <div class="container">
     <div class="search-box">
-      <input type="text" placeholder="Buscar">
-      <button>Buscar</button>
+      <input type="text" placeholder="Search">
+      <button>Search</button>
     </div>
     <div class="image-box">
       <img src="imagenes/shells.jpg" alt="Shells Image">
