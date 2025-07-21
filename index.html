@@ -29,12 +29,12 @@
       border-radius: 50%;
       border: 2px solid black;
       object-fit: cover;
-      background-color: #336699; /* dark blue fill inside circle */
+      background-color: #5a85b0; /* lighter blue */
       padding: 5px;
     }
 
     .title {
-      font-size: 40px;
+      font-size: 50px; /* larger title */
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
@@ -47,24 +47,25 @@
     }
 
     .social-icons img {
-      height: 45px;
+      height: 60px; /* larger icons */
+      width: 60px;
     }
 
     nav {
-      background-color: #ccc;
+      background-color: #dddddd; /* lighter */
       margin: 0 20px 20px 20px;
-      padding: 10px 40px;
+      padding: 18px 40px; /* taller */
       display: flex;
-      justify-content: flex-start; /* align to left */
+      justify-content: flex-start;
       gap: 40px;
       border: 1px solid #000;
       border-radius: 4px;
-      font-weight: bold;
+      font-weight: normal; /* not bold */
+      font-size: 18px;
     }
 
     .container {
       display: flex;
-      flex-direction: column;
       gap: 40px;
       padding: 40px;
       background-color: #cce6ff;
@@ -72,28 +73,30 @@
       margin: 20px;
     }
 
-    .search-box, .image-box {
-      background-color: #ffffff;
+    .search-box {
+      background-color: #a7cef6;
       padding: 20px;
       border-radius: 10px;
       border: 1px solid #666;
-    }
-
-    .search-box {
+      flex: 2;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
     }
 
     .search-box input[type="text"] {
-      padding: 10px;
-      font-size: 16px;
+      padding: 15px;
+      font-size: 18px;
       border-radius: 5px;
       border: 1px solid #666;
       margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .search-box button {
-      width: 100px;
+      align-self: flex-end;
+      width: 80px;
       padding: 10px;
       font-size: 16px;
       cursor: pointer;
@@ -103,6 +106,11 @@
     }
 
     .image-box {
+      background-color: #a7cef6;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #666;
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -136,8 +144,9 @@
 
   <div class="container">
     <div class="search-box">
-      <input type="text" placeholder="Search">
-      <button>Search</button>
+      <input type="text" placeholder="Buscar">
+      <button>Buscar</button>
+      <!-- Leave space below for future search filters or categories -->
     </div>
     <div class="image-box">
       <img src="imagenes/shells.jpg" alt="Shells Image">
@@ -146,3 +155,4 @@
 
 </body>
 </html>
+
